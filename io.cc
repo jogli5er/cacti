@@ -3168,6 +3168,8 @@ void output_UCA(uca_org_t *fr)
             cout << "\t data buffer delay (ns): " << fr->data_array2->delay_data_buffer * 1e9 << endl;
             cout << "\t subarray output driver delay (ns): " << fr->data_array2->delay_subarray_output_driver * 1e9 << endl;
 
+            cout << "\t ACCUMULATED MUX TIMING STATS (ns): " << fr->data_array2->delay_senseamp_mux_decoder * 1e9 << endl;
+
             cout << endl
                  << "Energy Components:" << endl
                  << endl;
@@ -3318,6 +3320,7 @@ void output_UCA(uca_org_t *fr)
             cout << "\tSense Amplifier delay (ns): " << fr->data_array2->delay_sense_amp * 1e9 << endl;
 
             cout << "\tH-tree output delay (ns): " << fr->data_array2->delay_subarray_output_driver * 1e9 + fr->data_array2->delay_dout_htree * 1e9 << endl;
+            cout << "\t ACCUMULATED MUX TIMING STATS (ns): " << fr->data_array2->delay_senseamp_mux_decoder * 1e9 << endl;
 
             if ((!(g_ip->pure_ram || g_ip->pure_cam || g_ip->fully_assoc)) && !g_ip->is_main_mem)
             {
