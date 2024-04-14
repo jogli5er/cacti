@@ -3169,6 +3169,12 @@ void output_UCA(uca_org_t *fr)
             cout << "\t subarray output driver delay (ns): " << fr->data_array2->delay_subarray_output_driver * 1e9 << endl;
 
             cout << "\t ACCUMULATED MUX TIMING STATS (ns): " << fr->data_array2->delay_senseamp_mux_decoder * 1e9 << endl;
+            cout << "\t DELAY_BIT_MUX_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_bit_mux_predecode_driver_and_block * 1e9 << endl;
+            cout << "\t DELAY_BIT_MUX_DECODER (ns): " << fr->data_array.delay_bit_mux_decoder * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_LEV_1_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_senseamp_mux_lev_1_predecode_driver_and_block * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_LEV_1_DECODER (ns): " << fr->data_array.delay_senseamp_mux_lev_1_decoder * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_LEV_2_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_senseamp_mux_lev_2_predecode_driver_and_block * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_LEV_2_DECODER (ns): " << fr->data_array.delay_senseamp_mux_lev_2_decoder * 1e9 << endl;
 
             cout << endl
                  << "Energy Components:" << endl
@@ -3321,6 +3327,13 @@ void output_UCA(uca_org_t *fr)
 
             cout << "\tH-tree output delay (ns): " << fr->data_array2->delay_subarray_output_driver * 1e9 + fr->data_array2->delay_dout_htree * 1e9 << endl;
             cout << "\t ACCUMULATED MUX TIMING STATS (ns): " << fr->data_array2->delay_senseamp_mux_decoder * 1e9 << endl;
+
+            cout << "\t DELAY_BIT_MUX_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_bit_mux_predecode_driver_and_block * 1e9 << endl;
+            cout << "\t DELAY_BIT_MUX_DECODER (ns): " << fr->data_array.delay_bit_mux_decoder * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_LEV_1_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_senseamp_mux_lev_1_predecode_driver_and_block * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_LEV_1_DECODER (ns): " << fr->data_array.delay_senseamp_mux_lev_1_decoder * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_LEV_2_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_senseamp_mux_lev_2_predecode_driver_and_block * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_LEV_2_DECODER (ns): " << fr->data_array.delay_senseamp_mux_lev_2_decoder * 1e9 << endl;
 
             if ((!(g_ip->pure_ram || g_ip->pure_cam || g_ip->fully_assoc)) && !g_ip->is_main_mem)
             {
