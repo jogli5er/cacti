@@ -3168,7 +3168,7 @@ void output_UCA(uca_org_t *fr)
             cout << "\t data buffer delay (ns): " << fr->data_array2->delay_data_buffer * 1e9 << endl;
             cout << "\t subarray output driver delay (ns): " << fr->data_array2->delay_subarray_output_driver * 1e9 << endl;
 
-            cout << "\t ACCUMULATED MUX TIMING STATS (ns): " << fr->data_array2->delay_senseamp_mux_decoder * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_DECODER (ns): " << fr->data_array2->delay_senseamp_mux_decoder * 1e9 << endl;
             cout << "\t DELAY_BIT_MUX_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_bit_mux_predecode_driver_and_block * 1e9 << endl;
             cout << "\t DELAY_BIT_MUX_DECODER (ns): " << fr->data_array.delay_bit_mux_decoder * 1e9 << endl;
             cout << "\t DELAY_SENSEAMP_MUX_LEV_1_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_senseamp_mux_lev_1_predecode_driver_and_block * 1e9 << endl;
@@ -3326,7 +3326,7 @@ void output_UCA(uca_org_t *fr)
             cout << "\tSense Amplifier delay (ns): " << fr->data_array2->delay_sense_amp * 1e9 << endl;
 
             cout << "\tH-tree output delay (ns): " << fr->data_array2->delay_subarray_output_driver * 1e9 + fr->data_array2->delay_dout_htree * 1e9 << endl;
-            cout << "\t ACCUMULATED MUX TIMING STATS (ns): " << fr->data_array2->delay_senseamp_mux_decoder * 1e9 << endl;
+            cout << "\t DELAY_SENSEAMP_MUX_DECODER (ns): " << fr->data_array2->delay_senseamp_mux_decoder * 1e9 << endl;
 
             cout << "\t DELAY_BIT_MUX_PREDECODE_DRIVER_AND_BLOCK (ns): " << fr->data_array.delay_bit_mux_predecode_driver_and_block * 1e9 << endl;
             cout << "\t DELAY_BIT_MUX_DECODER (ns): " << fr->data_array.delay_bit_mux_decoder * 1e9 << endl;

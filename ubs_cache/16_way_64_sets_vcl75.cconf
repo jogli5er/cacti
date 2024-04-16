@@ -2,7 +2,8 @@
 //-size (bytes) 2048
 //-size (bytes) 4096
 //-size (bytes) 16384
--size (bytes) 32768
+//-size (bytes) 32768
+-size (bytes) 49152
 //-size (bytes) 65536
 //-size (bytes) 131072
 //-size (bytes) 262144
@@ -27,7 +28,7 @@
 
 # Line size
 //-block size (bytes) 8
--block size (bytes) 32
+-block size (bytes) 48
 
 # To model Fully Associative cache, set associativity to zero
 //-associativity 0
@@ -37,12 +38,12 @@
 -associativity 16
 
 -read-write port 0
--exclusive read port 2
+-exclusive read port 1
 -exclusive write port 2
 -single ended read ports 0
 
 # Multiple banks connected using a bus
--UCA bank count 1
+-UCA bank count 2
 -technology (u) 0.022
 //-technology (u) 0.040
 //-technology (u) 0.032
@@ -98,13 +99,13 @@
 # normal - data array lookup and tag access happen in parallel
 #          final data block is broadcasted in data array h-tree 
 #          after getting the signal from the tag array
--access mode (normal, sequential, fast) - "sequential"
-//-access mode (normal, sequential, fast) - "sequential"
-//-access mode (normal, sequential, fast) - "sequential"
+-access mode (normal, sequential, fast) - "normal"
+//-access mode (normal, sequential, fast) - "normal"
+//-access mode (normal, sequential, fast) - "normal"
 
 
 # DESIGN OBJECTIVE for UCA (or banks in NUCA)
--design objective (weight delay, dynamic power, leakage power, cycle time, area) 0:0:0:50:50
+-design objective (weight delay, dynamic power, leakage power, cycle time, area) 100:0:0:100:0
 
 # Percentage deviation from the minimum value 
 # Ex: A deviation value of 10:1000:1000:1000:1000 will try to find an organization
@@ -117,7 +118,7 @@
 -deviate (delay, dynamic power, leakage power, cycle time, area) 100:100000:100000:100:100
 
 # Objective for NUCA
--NUCAdesign objective (weight delay, dynamic power, leakage power, cycle time, area) 100:100:0:0:100
+-NUCAdesign objective (weight delay, dynamic power, leakage power, cycle time, area) 100:0:0:100:0
 -NUCAdeviate (delay, dynamic power, leakage power, cycle time, area) 10:10000:10000:10000:10000
 
 # Set optimize tag to ED or ED^2 to obtain a cache configuration optimized for
@@ -151,16 +152,16 @@
 //-Wire inside mat - "global"
 -Wire inside mat - "semi-global"
 //-Wire outside mat - "global"
--Wire outside mat - "semi-global"
+-Wire outside mat - "global"
 
--Interconnect projection - "conservative"
+-Interconnect projection - "aggressive"
 //-Interconnect projection - "aggressive"
 
 # Contention in network (which is a function of core count and cache level) is one of
 # the critical factor used for deciding the optimal bank count value
 # core count can be 4, 8, or 16
 //-Core count 4
--Core count 1
+-Core count 16
 //-Core count 16
 -Cache level (L2/L3) - "L1"
 
