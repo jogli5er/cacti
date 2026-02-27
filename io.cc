@@ -2129,11 +2129,6 @@ bool InputParameter::error_checking()
     {
       //fully_assoc = false;
       A = assoc;
-      if (is_pow2(A) == false)
-      {
-        cerr << "Associativity must be a power of 2" << endl;
-        return false;
-      }
     }
   }
 
@@ -2733,8 +2728,8 @@ void output_UCA(uca_org_t *fr)
 	if(g_ip->is_3d_mem)
 	{
 
-		cout<<"-------  CACTI (version "<< VER_MAJOR_CACTI <<"."<< VER_MINOR_CACTI<<"."VER_COMMENT_CACTI
-								<< " of " << VER_UPDATE_CACTI << ") 3D DRAM Main Memory  -------"<<endl;
+		cout<<"-------  CACTI (version "<< _VER_MAJOR_CACTI <<"."<< _VER_MINOR_CACTI<<"."<<_VER_COMMENT_CACTI
+								<< " of " << _VER_UPDATE_CACTI << ") 3D DRAM Main Memory  -------"<<endl;
 
 		cout << "\nMemory Parameters:\n";
 		cout << "	Total memory size (Gb): " <<
@@ -2810,18 +2805,18 @@ void output_UCA(uca_org_t *fr)
   }
   else {
     if (g_ip->data_arr_ram_cell_tech_type == 3) {
-      cout << "\n---------- CACTI (version "<< VER_MAJOR_CACTI <<"."<< VER_MINOR_CACTI<<"."VER_COMMENT_CACTI
-								<< " of " << VER_UPDATE_CACTI << "), Uniform Cache Access " <<
+      cout << "\n---------- CACTI (version "<< _VER_MAJOR_CACTI <<"."<< _VER_MINOR_CACTI<<"."<<_VER_COMMENT_CACTI
+								<< " of " << _VER_UPDATE_CACTI << "), Uniform Cache Access " <<
         "Logic Process Based DRAM Model ----------\n";
     }
     else if (g_ip->data_arr_ram_cell_tech_type == 4) {
-      cout << "\n---------- CACTI (version "<< VER_MAJOR_CACTI <<"."<< VER_MINOR_CACTI<<"."VER_COMMENT_CACTI
-								<< " of " << VER_UPDATE_CACTI << "), Uniform" <<
+      cout << "\n---------- CACTI (version "<< _VER_MAJOR_CACTI <<"."<< _VER_MINOR_CACTI<<"."<<_VER_COMMENT_CACTI
+								<< " of " << _VER_UPDATE_CACTI << "), Uniform" <<
         "Cache Access Commodity DRAM Model ----------\n";
     }
     else {
-      cout << "\n---------- CACTI (version "<< VER_MAJOR_CACTI <<"."<< VER_MINOR_CACTI<<"."VER_COMMENT_CACTI
-								<< " of " << VER_UPDATE_CACTI << "), Uniform Cache Access "
+      cout << "\n---------- CACTI (version "<< _VER_MAJOR_CACTI <<"."<< _VER_MINOR_CACTI<<"."<<_VER_COMMENT_CACTI
+								<< " of " << _VER_UPDATE_CACTI << "), Uniform Cache Access "
         "SRAM Model ----------\n";
     }
     cout << "\nCache Parameters:\n";

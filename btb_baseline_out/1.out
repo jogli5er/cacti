@@ -1,0 +1,358 @@
+Cache size                    : 2048
+Block size                    : 2
+Associativity                 : 8
+Read only ports               : 6
+Write only ports              : 1
+Read write ports              : 0
+Single ended read ports       : 0
+Cache banks (UCA)             : 1
+Technology                    : 0.022
+Temperature                   : 360
+Tag size                      : 15
+array type                    : Cache
+Model as memory               : 0
+Model as 3D memory       	 : 0
+Access mode                   : 2
+Data array cell type          : 0
+Data array peripheral type    : 0
+Tag array cell type           : 0
+Tag array peripheral type     : 0
+Optimization target           : 2
+Design objective (UCA wt)     : 0 0 0 100 0
+Design objective (UCA dev)    : 20 100000 100000 100000 100000
+Cache model                   : 0
+Nuca bank                     : 0
+Wire inside mat               : 2
+Wire outside mat              : 2
+Interconnect projection       : 0
+Wire signaling               : 1
+Print level                   : 1
+ECC overhead                  : 0
+Page size                     : 8192
+Burst length                  : 8
+Internal prefetch width       : 8
+Force cache config            : 0
+Subarray Driver direction       : 1
+iostate                       : READ
+dram_ecc                      : NO_ECC
+io_type                     : DDR3
+dram_dimm                      : UDIMM
+IO Area (sq.mm) = inf
+IO Timing Margin (ps) = 35.8333
+IO Votlage Margin (V) = 0.155
+IO Dynamic Power (mW) = 1282.42 PHY Power (mW) = 232.752 PHY Wakeup Time (us) = 27.503
+IO Termination and Bias Power (mW) = 3136.7
+
+---------- CACTI (version 7.0.3DD Prerelease of Aug, 2012), Uniform Cache Access SRAM Model ----------
+
+Cache Parameters:
+    Total cache size (bytes): 2048
+    Number of banks: 1
+    Associativity: 8
+    Block size (bytes): 2
+    Read/write Ports: 0
+    Read ports: 6
+    Write ports: 1
+    Technology size (nm): 22
+
+    Access time (ns): 0.179359
+    Cycle time (ns):  0.116996
+    Total dynamic read energy per access (nJ): 0.00701573
+    Total dynamic write energy per access (nJ): 0.00738965
+    Total leakage power of a bank (mW): 9.26557
+    Total gate leakage power of a bank (mW): 0.0345454
+    Cache height x width (mm): 0.193016 x 0.392056
+
+    Best Ndwl : 2
+    Best Ndbl : 2
+    Best Nspd : 1
+    Best Ndcm : 4
+    Best Ndsam L1 : 1
+    Best Ndsam L2 : 1
+
+    Best Ntwl : 4
+    Best Ntbl : 2
+    Best Ntspd : 2
+    Best Ntcm : 1
+    Best Ntsam L1 : 1
+    Best Ntsam L2 : 2
+    Data array, H-tree wire type: Delay optimized global wires
+    Tag array, H-tree wire type: Delay optimized global wires
+
+Time Components:
+
+  Data side (with Output driver) (ns): 0.140933
+	H-tree input delay (ns): 0
+	Decoder + wordline delay (ns): 0.0655811
+	Bitline delay (ns): 0.0542423
+	Sense Amplifier delay (ns): 0.00193262
+	H-tree output delay (ns): 0.0191768
+
+  Tag side (with Output driver) (ns): 0.179359
+	H-tree input delay (ns): 0.0240699
+	Decoder + wordline delay (ns): 0.0593845
+	Bitline delay (ns): 0.0298694
+	Sense Amplifier delay (ns): 0.00177661
+	Comparator delay (ns): 0.0126851
+	H-tree output delay (ns): 0.0515739
+
+
+Power Components:
+
+  Data array: Total dynamic read energy/access  (nJ): 0.00199965
+	Total energy in H-tree (that includes both address and data transfer) (nJ): 0
+	Output Htree inside bank Energy (nJ): 0
+	Decoder (nJ): 5.6586e-05
+	Wordline (nJ): 6.13112e-05
+	Bitline mux & associated drivers (nJ): 3.30633e-05
+	Sense amp mux & associated drivers (nJ): 0
+	Bitlines precharge and equalization circuit (nJ): 0.000137629
+	Bitlines (nJ): 0.000562104
+	Sense amplifier energy (nJ): 2.59889e-05
+	Sub-array output driver (nJ): 0.00112296
+	Total leakage power of a bank (mW): 2.19914
+	Total leakage power in H-tree (that includes both address and data network) ((mW)): 0
+	Total leakage power in cells (mW): 0
+	Total leakage power in row logic(mW): 0
+	Total leakage power in column logic(mW): 0
+	Total gate leakage power in H-tree (that includes both address and data network) ((mW)): 0
+
+  Tag array:  Total dynamic read energy/access (nJ): 0.00501609
+	Total leakage read/write power of a bank (mW): 7.06642
+	Total energy in H-tree (that includes both address and data transfer) (nJ): 0.00419383
+	Output Htree inside a bank Energy (nJ): 0.00200583
+	Decoder (nJ): 1.80215e-05
+	Wordline (nJ): 5.83911e-05
+	Bitline mux & associated drivers (nJ): 0
+	Sense amp mux & associated drivers (nJ): 3.10613e-05
+	Bitlines precharge and equalization circuit (nJ): 0.000130365
+	Bitlines (nJ): 0.000276813
+	Sense amplifier energy (nJ): 8.95912e-05
+	Sub-array output driver (nJ): 0.000131654
+	Total leakage power of a bank (mW): 7.06642
+	Total leakage power in H-tree (that includes both address and data network) ((mW)): 0.694126
+	Total leakage power in cells (mW): 0
+	Total leakage power in row logic(mW): 0
+	Total leakage power in column logic(mW): 0
+	Total gate leakage power in H-tree (that includes both address and data network) ((mW)): 0.00502436
+
+
+Area Components:
+
+  Data array: Area (mm2): 0.0260327
+	Height (mm): 0.193016
+	Width (mm): 0.134873
+	Area efficiency (Memory cell area/Total area) - 54.3426 %
+		MAT Height (mm): 0.193016
+		MAT Length (mm): 0.134873
+		Subarray Height (mm): 0.0627968
+		Subarray Length (mm): 0.05698
+
+  Tag array: Area (mm2): 0.0308823
+	Height (mm): 0.120079
+	Width (mm): 0.257183
+	Area efficiency (Memory cell area/Total area) - 42.9459 %
+		MAT Height (mm): 0.100367
+		MAT Length (mm): 0.124279
+		Subarray Height (mm): 0.0313984
+		Subarray Length (mm): 0.053295
+
+Wire Properties:
+
+  Delay Optimal
+	Repeater size - 103.081 
+	Repeater spacing - 0.0804897 (mm) 
+	Delay - 0.0886354 (ns/mm) 
+	PowerD - 0.000280553 (nJ/mm) 
+	PowerL - 0.0215843 (mW/mm) 
+	PowerLgate - 9.17939e-05 (mW/mm)
+	Wire width - 0.044 microns
+	Wire spacing - 0.044 microns
+
+  5% Overhead
+	Repeater size - 42.0815 
+	Repeater spacing - 0.0804897 (mm) 
+	Delay - 0.0925414 (ns/mm) 
+	PowerD - 0.000182747 (nJ/mm) 
+	PowerL - 0.00881145 (mW/mm) 
+	PowerLgate - 3.74735e-05 (mW/mm)
+	Wire width - 0.044 microns
+	Wire spacing - 0.044 microns
+
+  10% Overhead
+	Repeater size - 36.0815 
+	Repeater spacing - 0.0804897 (mm) 
+	Delay - 0.0971883 (ns/mm) 
+	PowerD - 0.000173475 (nJ/mm) 
+	PowerL - 0.00755511 (mW/mm) 
+	PowerLgate - 3.21305e-05 (mW/mm)
+	Wire width - 0.044 microns
+	Wire spacing - 0.044 microns
+
+  20% Overhead
+	Repeater size - 42.0815 
+	Repeater spacing - 0.18049 (mm) 
+	Delay - 0.106204 (ns/mm) 
+	PowerD - 0.000152379 (nJ/mm) 
+	PowerL - 0.00392948 (mW/mm) 
+	PowerLgate - 1.67114e-05 (mW/mm)
+	Wire width - 0.044 microns
+	Wire spacing - 0.044 microns
+
+  30% Overhead
+	Repeater size - 33.0815 
+	Repeater spacing - 0.18049 (mm) 
+	Delay - 0.114067 (ns/mm) 
+	PowerD - 0.00014499 (nJ/mm) 
+	PowerL - 0.00308908 (mW/mm) 
+	PowerLgate - 1.31373e-05 (mW/mm)
+	Wire width - 0.044 microns
+	Wire spacing - 0.044 microns
+
+  Low-swing wire (1 mm) - Note: Unlike repeated wires, 
+	delay and power values of low-swing wires do not
+	have a linear relationship with length. 
+	delay - 0.0902442 (ns) 
+	powerD - 2.8399e-06 (nJ) 
+	PowerL - 1.71796e-07 (mW) 
+	PowerLgate - 1.29017e-09 (mW)
+	Wire width - 8.8e-08 microns
+	Wire spacing - 8.8e-08 microns
+
+
+cap: 0 GB bw: 800 (MHz) cost: $0 dpc: 0 energy: 0 (nJ)  DIMM: LRDIMM  low power: F [ 0(4GB) 0(8GB) 0(16GB) 0(32GB) 0(64GB) ]
+cap: 4 GB bw: 800 (MHz) cost: $40.38 dpc: 1 energy: 1.12801 (nJ)  DIMM:  UDIMM  low power: F [ 1(4GB) 0(8GB) 0(16GB) 0(32GB) 0(64GB) ]
+cap: 8 GB bw: 800 (MHz) cost: $64.17 dpc: 1 energy: 2.42148 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 0(16GB) 0(32GB) 0(64GB) ]
+cap: 12 GB bw: 667 (MHz) cost: $106.41 dpc: 2 energy: 3.94962 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 1(8GB) 0(16GB) 0(32GB) 0(64GB) ]
+cap: 16 GB bw: 800 (MHz) cost: $122.6 dpc: 1 energy: 4.84296 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 1(16GB) 0(32GB) 0(64GB) ]
+cap: 20 GB bw: 667 (MHz) cost: $164.84 dpc: 2 energy: 6.5827 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 0(8GB) 1(16GB) 0(32GB) 0(64GB) ]
+cap: 24 GB bw: 667 (MHz) cost: $186.77 dpc: 2 energy: 7.89925 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 1(16GB) 0(32GB) 0(64GB) ]
+cap: 28 GB bw: 533 (MHz) cost: $229.01 dpc: 3 energy: 11.4135 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 1(8GB) 1(16GB) 0(32GB) 0(64GB) ]
+cap: 32 GB bw: 667 (MHz) cost: $245.2 dpc: 2 energy: 10.5323 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 2(16GB) 0(32GB) 0(64GB) ]
+cap: 36 GB bw: 533 (MHz) cost: $287.44 dpc: 3 energy: 14.6746 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 0(8GB) 2(16GB) 0(32GB) 0(64GB) ]
+cap: 40 GB bw: 533 (MHz) cost: $309.37 dpc: 3 energy: 16.3051 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 2(16GB) 0(32GB) 0(64GB) ]
+cap: 44 GB bw: 533 (MHz) cost: $410.71 dpc: 3 energy: 17.9356 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 1(8GB) 0(16GB) 1(32GB) 0(64GB) ]
+cap: 48 GB bw: 533 (MHz) cost: $367.8 dpc: 3 energy: 19.5661 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 3(16GB) 0(32GB) 0(64GB) ]
+cap: 52 GB bw: 533 (MHz) cost: $469.14 dpc: 3 energy: 21.1966 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 0(8GB) 1(16GB) 1(32GB) 0(64GB) ]
+cap: 56 GB bw: 533 (MHz) cost: $491.07 dpc: 3 energy: 22.8271 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 1(16GB) 1(32GB) 0(64GB) ]
+cap: 64 GB bw: 533 (MHz) cost: $549.5 dpc: 3 energy: 26.0881 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 2(16GB) 1(32GB) 0(64GB) ]
+cap: 68 GB bw: 533 (MHz) cost: $650.84 dpc: 3 energy: 27.7186 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 0(8GB) 0(16GB) 2(32GB) 0(64GB) ]
+cap: 72 GB bw: 533 (MHz) cost: $672.77 dpc: 3 energy: 29.3491 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 0(16GB) 2(32GB) 0(64GB) ]
+cap: 80 GB bw: 533 (MHz) cost: $731.2 dpc: 3 energy: 32.6101 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 1(16GB) 2(32GB) 0(64GB) ]
+ BoB       cap: 0 GB num_channels: 1 bw: 800 (MHz) cost: $0 energy: 0 (nJ) 
+    ==============
+    (0) cap: 0 GB bw: 800 (MHz) cost: $0 dpc: 0 energy: 0 (nJ)  DIMM: LRDIMM  low power: F [ 0(4GB) 0(8GB) 0(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 4 GB num_channels: 1 bw: 800 (MHz) cost: $40.38 energy: 1.12801 (nJ) 
+    ==============
+    (0) cap: 4 GB bw: 800 (MHz) cost: $40.38 dpc: 1 energy: 1.12801 (nJ)  DIMM:  UDIMM  low power: F [ 1(4GB) 0(8GB) 0(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 8 GB num_channels: 1 bw: 800 (MHz) cost: $64.17 energy: 2.42148 (nJ) 
+    ==============
+    (0) cap: 8 GB bw: 800 (MHz) cost: $64.17 dpc: 1 energy: 2.42148 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 0(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 12 GB num_channels: 1 bw: 667 (MHz) cost: $106.41 energy: 3.94962 (nJ) 
+    ==============
+    (0) cap: 12 GB bw: 667 (MHz) cost: $106.41 dpc: 2 energy: 3.94962 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 1(8GB) 0(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 16 GB num_channels: 1 bw: 800 (MHz) cost: $122.6 energy: 4.84296 (nJ) 
+    ==============
+    (0) cap: 16 GB bw: 800 (MHz) cost: $122.6 dpc: 1 energy: 4.84296 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 1(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 20 GB num_channels: 1 bw: 667 (MHz) cost: $164.84 energy: 6.5827 (nJ) 
+    ==============
+    (0) cap: 20 GB bw: 667 (MHz) cost: $164.84 dpc: 2 energy: 6.5827 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 0(8GB) 1(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 24 GB num_channels: 1 bw: 667 (MHz) cost: $186.77 energy: 7.89925 (nJ) 
+    ==============
+    (0) cap: 24 GB bw: 667 (MHz) cost: $186.77 dpc: 2 energy: 7.89925 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 1(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 28 GB num_channels: 1 bw: 533 (MHz) cost: $229.01 energy: 11.4135 (nJ) 
+    ==============
+    (0) cap: 28 GB bw: 533 (MHz) cost: $229.01 dpc: 3 energy: 11.4135 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 1(8GB) 1(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 32 GB num_channels: 1 bw: 667 (MHz) cost: $245.2 energy: 10.5323 (nJ) 
+    ==============
+    (0) cap: 32 GB bw: 667 (MHz) cost: $245.2 dpc: 2 energy: 10.5323 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 2(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 36 GB num_channels: 1 bw: 533 (MHz) cost: $287.44 energy: 14.6746 (nJ) 
+    ==============
+    (0) cap: 36 GB bw: 533 (MHz) cost: $287.44 dpc: 3 energy: 14.6746 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 0(8GB) 2(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 40 GB num_channels: 1 bw: 533 (MHz) cost: $309.37 energy: 16.3051 (nJ) 
+    ==============
+    (0) cap: 40 GB bw: 533 (MHz) cost: $309.37 dpc: 3 energy: 16.3051 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 2(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 44 GB num_channels: 1 bw: 533 (MHz) cost: $410.71 energy: 17.9356 (nJ) 
+    ==============
+    (0) cap: 44 GB bw: 533 (MHz) cost: $410.71 dpc: 3 energy: 17.9356 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 1(8GB) 0(16GB) 1(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 48 GB num_channels: 1 bw: 533 (MHz) cost: $367.8 energy: 19.5661 (nJ) 
+    ==============
+    (0) cap: 48 GB bw: 533 (MHz) cost: $367.8 dpc: 3 energy: 19.5661 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 3(16GB) 0(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 52 GB num_channels: 1 bw: 533 (MHz) cost: $469.14 energy: 21.1966 (nJ) 
+    ==============
+    (0) cap: 52 GB bw: 533 (MHz) cost: $469.14 dpc: 3 energy: 21.1966 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 0(8GB) 1(16GB) 1(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 56 GB num_channels: 1 bw: 533 (MHz) cost: $491.07 energy: 22.8271 (nJ) 
+    ==============
+    (0) cap: 56 GB bw: 533 (MHz) cost: $491.07 dpc: 3 energy: 22.8271 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 1(16GB) 1(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 64 GB num_channels: 1 bw: 533 (MHz) cost: $549.5 energy: 26.0881 (nJ) 
+    ==============
+    (0) cap: 64 GB bw: 533 (MHz) cost: $549.5 dpc: 3 energy: 26.0881 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 2(16GB) 1(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 68 GB num_channels: 1 bw: 533 (MHz) cost: $650.84 energy: 27.7186 (nJ) 
+    ==============
+    (0) cap: 68 GB bw: 533 (MHz) cost: $650.84 dpc: 3 energy: 27.7186 (nJ)  DIMM:  RDIMM  low power: F [ 1(4GB) 0(8GB) 0(16GB) 2(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 72 GB num_channels: 1 bw: 533 (MHz) cost: $672.77 energy: 29.3491 (nJ) 
+    ==============
+    (0) cap: 72 GB bw: 533 (MHz) cost: $672.77 dpc: 3 energy: 29.3491 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 1(8GB) 0(16GB) 2(32GB) 0(64GB) ]
+    ==============
+
+ BoB       cap: 80 GB num_channels: 1 bw: 533 (MHz) cost: $731.2 energy: 32.6101 (nJ) 
+    ==============
+    (0) cap: 80 GB bw: 533 (MHz) cost: $731.2 dpc: 3 energy: 32.6101 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 1(16GB) 2(32GB) 0(64GB) ]
+    ==============
+
+all possible results:
+Memory    cap: 80 GB num_bobs: 1 bw: 533 (MHz) cost: $731.2 energy: 32.6101 (nJ) 
+ {
+ (0)  BoB       cap: 80 GB num_channels: 1 bw: 533 (MHz) cost: $731.2 energy: 32.6101 (nJ) 
+    ==============
+    (0) cap: 80 GB bw: 533 (MHz) cost: $731.2 dpc: 3 energy: 32.6101 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 1(16GB) 2(32GB) 0(64GB) ]
+    ==============
+
+ }
+
+top 3 best memory configurations are:
+Memory    cap: 80 GB num_bobs: 1 bw: 533 (MHz) cost: $731.2 energy: 32.6101 (nJ) 
+ {
+ (0)  BoB       cap: 80 GB num_channels: 1 bw: 533 (MHz) cost: $731.2 energy: 32.6101 (nJ) 
+    ==============
+    (0) cap: 80 GB bw: 533 (MHz) cost: $731.2 dpc: 3 energy: 32.6101 (nJ)  DIMM:  RDIMM  low power: F [ 0(4GB) 0(8GB) 1(16GB) 2(32GB) 0(64GB) ]
+    ==============
+
+ }
+
+=============================================
+
