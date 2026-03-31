@@ -159,7 +159,7 @@ void * calc_time_mt_wrapper(void * void_obj)
     wt_max = Low_swing;
   }
 
-  for (double Nspd = Nspd_min; Nspd <= MAXDATASPD; Nspd *= 2)
+  for (double Nspd = Nspd_min; Nspd <= MAXDATASPD; Nspd++)
   {
     for (int wr = wt_min; wr <= wt_max; wr++)
     {
